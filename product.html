@@ -38,48 +38,30 @@
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-link" href="/?aboutus/">公司简介</a>
+                        <a class="nav-link" href="/aboutus.html">公司简介</a>
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-link" href="/?article/">新闻中心</a>
+                        <a class="nav-link" href="/article.html">新闻中心</a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="/?product/">产品中心</a>
+                        <a class="nav-link" href="/product.html">产品中心</a>
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-link" href="/?case/">应用案例</a>
+                        <a class="nav-link" href="/case.html">应用案例</a>
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-link" href="/?job/">招贤纳士</a>
+                        <a class="nav-link" href="/gbook.html">资料下载</a>
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-link" href="/?gbook/">资料下载</a>
-                    </li>
-
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/?contact/">联系我们</a>
+                        <a class="nav-link" href="/contact.html">联系我们</a>
                     </li>
 
                 </ul>
-
-                <span class="navbar-text">
-
-
-
-
-
-
-
-                    <a class="text-secondary" href="/?member/login/">登录</a>
-
-
-
-                </span>
 
             </div>
         </div>
@@ -107,23 +89,6 @@
 
         <!-- 分类筛选 -->
         <div class="my-3">
-            <div class="row">
-                <div class="col-12 col-sm-2 col-md-1">品牌：</div>
-                <div class="col-12 col-sm-10 col-md-11">
-                    <a href="/?product/" class="mb-3 btn btn-info">全部</a>
-
-                    <a href="/?product/&ext_type=ABB" class="mb-3 btn btn-light">ABB</a>
-
-                    <a href="/?product/&ext_type=%E9%9B%B7%E8%B5%9B" class="mb-3 btn btn-light">雷赛</a>
-
-                    <a href="/?product/&ext_type=BECKHOFF" class="mb-3 btn btn-light">BECKHOFF</a>
-
-                    <a href="/?product/&ext_type=%E8%8B%8F%E5%B7%9E%E5%BE%B7%E8%BF%88%E7%A7%91"
-                        class="mb-3 btn btn-light">苏州德迈科</a>
-
-                </div>
-            </div>
-
             <div class="row">
                 <div class="col-12 col-sm-2 col-md-1">类别：</div>
                 <div class="col-12 col-sm-10 col-md-11">
@@ -158,8 +123,6 @@
 
                     <a href="/?product/&ext_color=%E4%BC%BA%E6%9C%8D%E7%BA%BF%E7%BC%86"
                         class="mb-3 btn btn-light">伺服线缆</a>
-
-                    <a href="/?product/&ext_color=" class="mb-3 btn btn-info"></a>
 
                 </div>
             </div>
@@ -340,30 +303,6 @@
             </div>
 
         </div>
-
-        <!-- 分页 -->
-
-        <nav aria-label="page navigation" class="my-4">
-            <div class="pagination justify-content-center">
-                <a class="page-item page-link" href="/?product/">首页</a>
-                <a class="page-item page-link" href="javascript:;">上一页</a>
-                <a href="/?product/" class="page-num page-num-current">1</a><a href="/?product_2/"
-                    class="page-num">2</a><a href="/?product_3/" class="page-num">3</a><a href="/?product_4/"
-                    class="page-num">4</a><!-- 数字条，小屏幕时自动隐藏-->
-                <a class="page-item page-link" href="/?product_2/">下一页</a>
-                <a class="page-item page-link" href="/?product_4/">尾页</a>
-            </div>
-        </nav>
-
-
-        <!-- 搜索-->
-        <form class="form-inline mb-5 justify-content-center" action="/?search/" method="get">
-            <div class="form-group mx-sm-3 mb-2">
-                <input type="text" name="keyword" class="form-control" placeholder="请输入关键字">
-            </div>
-            <button type="submit" class="btn btn-info mb-2">搜索</button>
-        </form>
-
     </div>
 
 
@@ -416,7 +355,7 @@
             </div>
             <div class="col-4 p-0 text-center">
 
-                <a href="/?aboutus/" class="text-light d-block pt-3 pb-3"><i class="fa fa-location-arrow"
+                <a href="/aboutus.html" class="text-light d-block pt-3 pb-3"><i class="fa fa-location-arrow"
                         aria-hidden="true"></i> 公司简介</a>
 
             </div>
@@ -481,40 +420,6 @@
     <script src="/template/default/bootstrap/js/bootstrap.min.js"></script>
     <script src="/template/default/js/wow.min.js"></script>
     <script src="/template/default/js/aoyun.js?v=v1.2.2"></script>
-    <script>
-        //ajax提交表单
-        function subform(obj) {
-            var url = '/?form/2/';
-            var tel = $(obj).find("#tel").val();
-
-            var reg = /^(1|0)[\d\-]+$/;
-            if (!reg.test(tel)) {
-                alert('电话号码错误！');
-                return false;
-            }
-
-            $.ajax({
-                type: 'POST',
-                url: url,
-                dataType: 'json',
-                data: {
-                    tel: tel
-                },
-                success: function (response, status) {
-                    if (response.code) {
-                        alert("您的来电已收到，我们会尽快联系您！");
-                        $(obj)[0].reset();
-                    } else {
-                        alert(response.data);
-                    }
-                },
-                error: function (xhr, status, error) {
-                    alert('返回数据异常！');
-                }
-            });
-            return false;
-        }
-    </script>
 
 
 
