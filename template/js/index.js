@@ -20,7 +20,7 @@ function init() {
 }
 
 function handleProjectClick(data) {
-    location.replace("product.html?type=" + data);
+    window.location.href = "product.html?type=" + data;
 }
 
 init();

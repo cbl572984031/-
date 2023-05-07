@@ -14,7 +14,7 @@ function init() {
     if (type == 0) {
         renderList = allGoodsList;
     } else {
-        renderList = allGoodsList.filter(function (e) { return e.type == dataType });
+        renderList = allGoodsList.filter(function (e) { return e.type == type });
     }
     render(renderList);
 
@@ -70,8 +70,7 @@ function render(renderList) {
 }
 
 function toDetail(id) {
-    location.replace("website.html?id=" + id);
-
+    window.location.href = "website.html?id=" + id;
 }
 
 init();
