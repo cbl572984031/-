@@ -1,4 +1,4 @@
-// 首页的8个产品展示
+// 首页的8个产品类型展示
 var indexClassList = [
     {
         imgSrc: "/static/upload/image/20221009/1665290611886497.jpg",
@@ -99,6 +99,69 @@ var classification = [
 ]
 
 //全部产品
-var allList = [
-    
+var allGoodsList = [
+    {
+        title: "MotiFlex e180伺服驱动器",
+        context: "MotiFlex e180伺服驱动器MotiFlex e180是一款支持多种以太网协议的通用型伺服驱动器，其出色的运动控制性能···",
+        imgUrl: "/static/upload/image/20220401/1648749635625597.jpg",
+        imgAlt: "MotiFlex e180伺服驱动器",
+        type: 1,
+        id: 10001
+    },
+    {
+        title: "MicroFlex e190伺服驱动器",
+        context: "MicroFlex e190伺服驱动器MicroFlex e190是一款支持多种以太网协议的紧凑型伺服驱动器，其出色的运动控制性···",
+        imgUrl: "/static/upload/image/20220401/1648750133873501.jpg",
+        imgAlt: "MicroFlex e190伺服驱动器",
+        type: 1,
+        id: 10002
+    },
+    {
+        title: "eSM伺服电机",
+        context: "eSM伺服电机eSM系列电机是一款高转矩精度、低转速波动的伺服电机。其优秀的动态性能和高分辨率反馈可满足各···",
+        imgUrl: "/static/upload/image/20220401/1648780260683391.jpg",
+        imgAlt: "eSM伺服电机",
+        type: 2,
+        id: 10003
+    },
+    {
+        title: "HDS高性能交流永磁伺服电机",
+        context: "HDS高性能交流永磁伺服电机HDS高性能交流永磁伺服电机，采用业界领先设计理念，全面考虑行业需求，融合多项···",
+        imgUrl: "/static/upload/image/20220401/1648793547857540.jpg",
+        imgAlt: "HDS高性能交流永磁伺服电机",
+        type: 2,
+        id: 10004
+    },
+    {
+        title: "DM(I)自冷电机",
+        context: "",
+        imgUrl: "/static/upload/image/20220401/1648803517323637.jpg",
+        imgAlt: "DM(I)自冷电机",
+        type: 2,
+        id: 10005
+    },
+    {
+        title: "AC500-eCo",
+        context: "AC500-eCoABB AC500-eCo 是一款小型、可升级和灵活的PLC，为您提供低成本的自动化解决方案。可升级AC500平台···",
+        imgUrl: "/static/upload/image/20220401/1648802184986502.jpg",
+        imgAlt: "AC500-eCo",
+        type: 3,
+        id: 10006
+    },
+    {
+        title: "CX9020 | 嵌入式控制器",
+        context: "CX9020 | 嵌入式控制器产品概览表产品搜索器适用于各种应用场景的紧凑型 PC 控制器CX9020 是一款适合 DIN 导···",
+        imgUrl: "/static/upload/image/20220401/1648801535582545.png",
+        imgAlt: "CX9020 | 嵌入式控制器",
+        type: 3,
+        id: 10007
+    },
+    {
+        title: "ACS180 – 经济型传动",
+        context: "ACS180 –经济型传动经济易用，紧凑型设备的可靠之选ACS180变频器是ABB全新设计的经济型传动。它内置了所有···",
+        imgUrl: "/static/upload/image/20220401/1648793880926519.jpg",
+        imgAlt: "ACS180 – 经济型传动",
+        type: 3,
+        id: 10008
+    },
 ]
