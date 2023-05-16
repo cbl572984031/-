@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="/template/default/swiper-4.3.5/css/swiper.min.css">
     <link rel="stylesheet" href="/template/default/css/animate.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        .goodsDetailsImgList img {
+            display: block;
+        }
+    </style>
     <script src="/template/default/js/jquery-1.12.4.min.js"></script>
 </head>
 
@@ -21,7 +26,7 @@
     <nav class="navbar navbar-light bg-light fixed-top navbar-expand-lg shadow-sm">
         <div class="container">
             <a class="navbar-brand my-1" href="/">
-                <img src="/static/upload/image/20220401/1648744902908599.jpg" class="logo-sm-height" height="50">
+                <img src="/static/upload/20220401/1648744902908599.jpg" class="logo-sm-height" height="50">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -71,7 +76,7 @@
 
     <!-- 头部大屏 -->
     <div class="jumbotron jumbotron-fluid mb-2"
-        style="background:#e9ecef url(/static/upload/image/20180412/1523501459462835.jpg);background-size:cover;no-repeat">
+        style="background:#e9ecef url(/static/upload/20180412/1523501459462835.jpg);background-size:cover;no-repeat">
         <div class="container text-light">
             <h1 class="fs-18 fs-sm-26 wow fadeInDown">传动产品</h1>
             <p class="fs-14  fs-sm-18 wow fadeInDown">服务创造价值、存在造就未来</p>
@@ -89,12 +94,7 @@
                     <a class="arrow-left" href="#"></a>
                     <a class="arrow-right" href="#"></a>
                     <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="/static/upload/image/20220401/1648749635625597.jpg">
-                            </div>
-
-                        </div>
+                        <div class="swiper-wrapper goodsImgList-1"></div>
                     </div>
                 </div>
 
@@ -102,7 +102,7 @@
                     <a class="arrow-left" href="#"></a>
                     <a class="arrow-right" href="#"></a>
                     <div class="swiper-container">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper goodsImgList-2">
                             <div class="swiper-slide active-nav swiper-slide-active">
                                 <img src="/static/upload/image/20220401/1648749635625597.jpg">
                             </div>
@@ -113,23 +113,20 @@
             </div>
 
             <div class="col-12 col-lg-6 mb-3 pr-3">
-                <h2 class="border-bottom pb-2 fs-sm-28 fs-20">MotiFlex e180伺服驱动器</h2>
+                <h2 class="border-bottom pb-2 fs-sm-28 fs-20 title"></h2>
                 <div class="text-secondary my-3 border-bottom-dashed lh-3">
-                    上架时间：2023-04-20
-                </div>
-                <div class="text-secondary my-3 border-bottom-dashed lh-3">
-                    浏览次数：258
+                    上架时间：<span class="updataTime"></span>
                 </div>
 
                 <div class="text-secondary my-3 border-bottom-dashed lh-3">
-                    产品品牌：ABB
+                    产品品牌：<span class="brand"></span>
                 </div>
 
                 <div class="text-secondary my-3 border-bottom-dashed lh-3">
-                    产品类别：伺服驱动器
+                    产品类别：<span class="type"></span>
                 </div>
                 <div class="text-secondary my-3 border-bottom-dashed lh-3">
-                    产品价格：￥
+                    产品价格：<span class="price"></span>
                 </div>
                 <div class="my-3 lh-3">
 
@@ -141,43 +138,22 @@
 
         <h5 class="border-bottom border-info pb-2 mb-2"><i class="fa fa-sliders" aria-hidden="true"></i> 产品详情</h5>
         <div class="content">
-            <h1 class="tile-headline"
-                style="font-size:32px;margin: 0px; padding: 0px; line-height: 32px; width: 782.531px;">MotiFlex
-                e180伺服驱动器</h1>
-            <p>MotiFlex e180是一款支持多种以太网协议的通用型伺服驱动器，其出色的运动控制性能、丰富的运动控制功能和优秀的可靠性，为您的生产和制造带来高效的生产力和持续的性能改进。</p>
+            <h1 class="tile-headline title"
+                style="font-size:32px;margin: 0px; padding: 0px; line-height: 32px; width: 782.531px;"></h1>
+            <p class="goodsContext"></p>
             <p style="margin-top: 14px; margin-bottom: 0px; padding: 0px;">&nbsp;</p>
             <p class="header3"
                 style="margin-top: 14px; margin-bottom: 0px; padding: 0px; font-size: 20px; line-height: 25px;">产品特点</p>
-            <ul style="list-style-type: square;" class=" list-paddingleft-2">
-                <li>
-                    <p>用于三相电网，电压范围为200至480 V AC<br /></p>
-                </li>
-                <li>
-                    <p>可通过软件灵活选择多种以太网协议</p>
-                </li>
-                <li>
-                    <p>可通过高级运动编程语言Mint实现多任务控制，例如通信、逻辑、运动及HMI交互控制<br /></p>
-                </li>
-                <li>
-                    <p>支持HIPERFACE DSL单电缆方案<br /></p>
-                </li>
-                <li>
-                    <p>支持2倍及3倍过载，最大过载时间可达3 s</p>
-                </li>
-                <li>
-                    <p>集成符合EN61800-5-2标准的安全转矩关断（STO）功能</p>
-                </li>
-                <li>
-                    <p>灵活的选件配置，实现功能扩展</p>
-                </li>
-            </ul>
-            <img src="/static/upload/image/20220401/1648749635625597.jpg">
-            <img src="/static/upload/image/20220401/1648749635625597.jpg">
-            <img src="/static/upload/image/20220401/1648749635625597.jpg">
+            <ul style="list-style-type: square;" class="list-paddingleft-2 peculiarityList">
 
-            <p>&nbsp;<span style="text-decoration-line: underline;"><a
-                        href="https://search.abb.com/library/Download.aspx?DocumentID=3ABD00050098&LanguageCode=zh&DocumentPartId=2&Action=Launch"
-                        target="_self">PDF下载</a></span></p>
+            </ul>
+            <div class="goodsDetailsImgList"></div>
+
+            <p><br /></p>
+            <p><br /></p>
+
+            <div class="downloadList">
+            </div>
             <p><br /></p>
             <p><br /></p>
         </div>
@@ -186,57 +162,6 @@
 
 
     <script src="/template/default/swiper-4.3.5/js/swiper.min.js"></script>
-    <script>
-        var viewSwiper = new Swiper('.view .swiper-container', {
-            on: {
-                slideChangeTransitionStart: function () {
-                    updateNavPosition()
-                }
-            }
-        })
-
-        $('.view .arrow-left,.preview .arrow-left').on('click', function (e) {
-            e.preventDefault()
-            if (viewSwiper.activeIndex == 0) {
-                viewSwiper.slideTo(viewSwiper.slides.length - 1, 1000);
-                return
-            }
-            viewSwiper.slidePrev()
-        })
-        $('.view .arrow-right,.preview .arrow-right').on('click', function (e) {
-            e.preventDefault()
-            if (viewSwiper.activeIndex == viewSwiper.slides.length - 1) {
-                viewSwiper.slideTo(0, 1000);
-                return
-            }
-            viewSwiper.slideNext()
-        })
-
-        var previewSwiper = new Swiper('.preview .swiper-container', {
-            //visibilityFullFit: true,
-            slidesPerView: 'auto',
-            allowTouchMove: false,
-            on: {
-                tap: function () {
-                    viewSwiper.slideTo(previewSwiper.clickedIndex)
-                }
-            }
-        })
-
-        function updateNavPosition() {
-            $('.preview .active-nav').removeClass('active-nav')
-            var activeNav = $('.preview .swiper-slide').eq(viewSwiper.activeIndex).addClass('active-nav')
-            if (!activeNav.hasClass('swiper-slide-visible')) {
-                if (activeNav.index() > previewSwiper.activeIndex) {
-                    var thumbsPerNav = Math.floor(previewSwiper.width / activeNav.width()) - 1
-                    previewSwiper.slideTo(activeNav.index() - thumbsPerNav)
-                } else {
-                    previewSwiper.slideTo(activeNav.index())
-                }
-            }
-        }
-    </script>
-
 
     <div class="footer mt-3 pt-5 border-top text-secondary bg-light">
         <div class="container">
@@ -337,7 +262,7 @@
             <dt style="width:200px;">
                 <h3><i class="fa fa-weixin" aria-hidden="true"></i>微信扫一扫<span class="remove"><i
                             class="fa fa-remove"></i></span></h3>
-                <p><img src="/static/upload/image/20230420/1681991836745024.png " width="100%"></p>
+                <p><img src="/static/upload/20230420/1681991836745024.png " width="100%"></p>
             </dt>
             <dd><i class="fa fa-weixin" aria-hidden="true"></i></dd>
             <dd>微信联系</dd>
@@ -353,6 +278,8 @@
     <script src="/template/default/bootstrap/js/bootstrap.min.js"></script>
     <script src="/template/default/js/wow.min.js"></script>
     <script src="/template/default/js/aoyun.js?v=v1.2.2"></script>
+    <script src="/config.js"></script>
+    <script src="/template/js/website.js"></script>
 </body>
 
 </html>
