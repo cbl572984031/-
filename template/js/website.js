@@ -29,10 +29,10 @@ function init() {
         var str2 = "";
         currentGoods.goodsImgList.forEach(e => {
             str1 += `<div class="swiper-slide">
-                        <img src="${e}" title="${currentGoods.title} alt="${currentGoods.title}">
+                        <img src="${e}" title="${currentGoods.title}" alt="${currentGoods.title}">
                     </div>`;
             str2 += `<div class="swiper-slide">
-                        <img src="${e}" title="${currentGoods.title} alt="${currentGoods.title}">
+                        <img src="${e}" title="${currentGoods.title}" alt="${currentGoods.title}">
                     </div>`;
         })
         document.querySelector(".goodsImgList-1").innerHTML = str1;
